@@ -17,11 +17,12 @@ function flipCard() {
     
     // do cards match?
 
-  if (firstCard.dataset.framework === secondCard.dataset.framework) {
-      firstCard.removeEventListener("click",flipCard);
-      secondCard.removeEventListener("click", flipCard);
-  }
-  console.log("Function was executed!")
+ function checkForMatch() {
+     let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+
+     isMatch ? disableCards() : unflipCards();
+
+ }
 }
 
 
