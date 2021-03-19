@@ -17,3 +17,12 @@ body {
 body {
     background-color: darkorchid;
 }
+h1 {
+    font-family: 'BioRhyme Expanded', serif;
+   font-size: 3em;
+   margin: 0;
+   padding: 0;
+   padding-top: 25px;
+   text-align: center;
+   color: aqua;
+}
