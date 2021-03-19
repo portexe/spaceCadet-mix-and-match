@@ -26,3 +26,10 @@ h1 {
    text-align: center;
    color: aqua;
 }
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
