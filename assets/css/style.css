@@ -33,6 +33,16 @@ h1 {
     flex-direction: column;
 
 }
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 1px;
+  grid-column: auto;
+  margin: auto;
+  padding-top: 125px;
+}
 .memory-card {
   border-style: hidden;
   background-color: transparent;
