@@ -12,6 +12,7 @@ function cardAnimation(cardId) {
 
 function flipCard() {
     if (lockboard) return;
+    if (this === firstCard) return;
     this.classList.add('flip');
     //first click
     hasFlippedCard = true;
@@ -47,5 +48,8 @@ function flipCard() {
   }, 1500); 
 }
 
- 
+ function resetBoard() {
+     (hasFlippedCard, lockboard = false, false);
+ }
+
 cards.forEach(card => card.addEventListener('click', flipCard));
