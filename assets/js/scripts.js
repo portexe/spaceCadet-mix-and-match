@@ -3,6 +3,7 @@
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
+let lockboard = false;
 let firstCard, secondCard;
 
 function cardAnimation(cardId) {
@@ -10,6 +11,7 @@ function cardAnimation(cardId) {
 }
 
 function flipCard() {
+    if (lockboard) return;
     this.classList.add('flip');
     //first click
     hasFlippedCard = true;
@@ -35,9 +37,13 @@ function flipCard() {
   }
  
     function unFlipCards() {
+      lockboard = true;
+
      setTimeout(() => {
      firstCard.classlist.remove('flip');
      secondCard.classlist.remove('flip');  
+
+     lockboard = false;
   }, 1500); 
 }
 
