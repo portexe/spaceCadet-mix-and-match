@@ -1,11 +1,7 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/susanmarie87/MS2-Game)
 
-Match The Oils
-
-Match the Oils is a card matching game. In this game we have several rows of cards. We then have to flip over two cards at a time in
-hopes of finding the match. In the event we do not choose the matching cards, our cards will automatically flip back over and we have
-the chance to try again. The cards will automatically shuffle for the next roud. The object of the game will be to always beat the previous 
-high score in order to 
+Sit, relax, and Align The Chakras in this simple memory game. This game is desgined to be challenging yet relaxing 
+all in one. This game is desgined to fit all screens so enjoy on your desktop, tablet, or mobile phone. 
 
 Image
 
@@ -52,11 +48,6 @@ Each page on the website was tested for screen resposiveness to ensure breakpoin
 
 The code was ran through each specific validator to make sure it passed.
 
-
-Tested links on Landing Page to ensure they went to desired areas.
-
-Tested Wild Indigos links on Footer to ensure that link worked properly.
-
 Tested all social media links
 
 Ran HTML code through WS3 Markdown validator. Minor warnings appeared regarding button element not permitted in the "a" element. Resolved this by replacing button element with div element
@@ -66,7 +57,7 @@ Removed unnecessary code that was flagged in HTML validator.
 Ran CSS through WS3 validator- PASSED.
 
 Deployment
-Match My Oils has been deployed on GitHub Pages with the following process:
+Align The Chakras has been deployed on GitHub Pages with the following process:
 
 All code was written on Gitpod, a cloud-based IDE.
 
@@ -87,7 +78,8 @@ The Clone option provides a URL, which you can use on your desktop IDE.
 The Download ZIP option provides a link to download a ZIP file which can be unzipped on your local machine or uploaded to your cloud-based IDE workspace.
 
 Credits:
-CardFace Image
+
+Card Image:
 https://unsplash.com/@maxineficheux
 https://images.unsplash.com/photo-1566745914757-00febc880ff9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjZ8fGxhdmVuZGVyJTIwZmxvd2VyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60
 
