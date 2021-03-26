@@ -9,10 +9,14 @@ let firstCard, secondCard;
 function cardAnimation(cardId) {
     document.getElementById(cardId).style.transform = "rotateY(180deg)";
 }
+function startGame() {
+    setTimeout(() => {shuffleCards();
+        countDown = startCountDown();
+        busy = false;
+   }, 500); 
 
 function flipCard() {
     if (lockboard) return;
-    if (this === firstCard) return;
     this.classList.add('flip');
     //first click
     hasFlippedCard = true;
@@ -44,12 +48,19 @@ function flipCard() {
      firstCard.classlist.remove('flip');
      secondCard.classlist.remove('flip');  
 
-     lockboard = false;
+     lockBoard = false;
   }, 1500); 
 }
 
  function resetBoard() {
-     (hasFlippedCard, lockboard = false, false);
+     [hasFlippedCard, lockboard] = [false, false];
+     [firstcard, secondCard] = [null,null];
  }
-
+ function shuffle() {
+     cards.forEach(card => {
+         let randomPos = Math.floor(Math.random() * 19);
+         card.style.order = randomPos;
+     });
+ }
+}
 cards.forEach(card => card.addEventListener('click', flipCard));
