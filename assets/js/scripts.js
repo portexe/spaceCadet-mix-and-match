@@ -219,11 +219,11 @@ function generateCardGrid() {
 
     // Time to finally set the image src's.
     // Due to the naming convention, this is really simple!
-    frontImg.src = `/assets/images/${c}.jpg`;
+    frontImg.src = `assets/images/${c}.jpg`;
     frontImg.classList.add('card-value');
 
     // The backs of all of the cards are the same.
-    backImg.src = '/assets/images/flamethrower.jpg';
+    backImg.src = 'assets/images/Flamethrower.jpg';
     backImg.classList.add('back-image');
 
     // Grab a reference to the game grid.
